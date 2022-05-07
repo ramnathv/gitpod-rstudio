@@ -1,6 +1,6 @@
 # gitpod-rstudio
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mfernandes61/gitpod-rstudio)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ramnathv/gitpod-rstudio)
 
 
  [What's inside?](#what-s-inside)
