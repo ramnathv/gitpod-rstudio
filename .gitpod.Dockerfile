@@ -1,7 +1,7 @@
 FROM rocker/verse:4.2.3
-RUN R -e 'install.packages("remotes")'
-RUN R -e 'remotes::install_cran("dockerfiler")'
-RUN R -e 'remotes::install_cran("devtools")'
-# ENV R_LIBS_USER=/home/gitpod/libs
-# ENV "PASSWORD"="password"
+
+RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
+
+USER gitpod
+
 EXPOSE 8787
