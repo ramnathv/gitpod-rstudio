@@ -2,8 +2,5 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: echo "R_LIBS_USER=/home/gitpod/libs" >> /home/gitpod/.Renviron
-  - command: echo "session-default-working-dir=/workspace/gitpod-rstudio" | sudo tee -a /etc/rstudio/rsession.conf && sudo rstudio-server start && gp ports await 8787 && gp preview $(gp url 8787) --external
-
-ports:
-  - port: 8787
-    onOpen: open-browser
+  - command: echo "session-default-working-dir=/workspace/gitpod-rstudio" | sudo tee -a /etc/rstudio/rsession.conf && sudo rstudio-server start && gp ports await 8787 && gp preview $(gp url 8787)
+  
